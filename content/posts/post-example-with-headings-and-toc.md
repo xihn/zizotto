@@ -1,5 +1,6 @@
 +++
 title = "Post Example With Headings And Toc"
+date = 2024-12-18
 [extra]
   toc = true
 +++

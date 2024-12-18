@@ -5,8 +5,9 @@
       </li>
       {% for item in config.extra.header_nav %}
       <li class="main-nav__item">
-          {% set trimmed_url = current_path | trim_end_matches(pat="/") %}
-          <a href="{{ item.url }}" class="nav-main-item{% if item.url == trimmed_url %} active{% endif %}" title="{{ item.title }}">
+          {% set trimmed_url = current_path | trim_start_matches(pat="/") | split(pat="/") | first %}
+          {% set formatted_trimmed_url = "/" ~ trimmed_url %}
+          <a href="{{ item.url }}" class="nav-main-item{% if item.url == formatted_trimmed_url %} active{% endif %}" title="{{ item.title }}">
               {{ item.title }}
           </a>
       </li>

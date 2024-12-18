@@ -33,3 +33,4 @@ header_nav = [
   { url = "/projects", title = "projects"},
   { url = "/posts", title = "posts"}
 ]
+title_space = true

@@ -13,9 +13,8 @@
         </header>
 
         <section class="page__body">
-            {% block main %}
-                {{ section.content | safe }}
-            {% endblock %}
+            {% block content %}
+            {% endblock content %}
         </section>
 
         <footer class="page__footer">

@@ -1,5 +1,6 @@
 +++
 title = "Latex Testing"
+date = 2024-12-18
 +++
 
 Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.
