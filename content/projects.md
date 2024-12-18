@@ -2,7 +2,6 @@
 title = "Projects"
 date = 2019-02-28
 +++
-<br/><br/>
 
 These are some various shitty projects I have worked on blah blah.
 

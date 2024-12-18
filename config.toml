@@ -1,11 +1,22 @@
 # The URL the site will be built for
-base_url = "https://zizotto.pages.dev"
-
-# Whether to automatically compile all Sass files in the sass directory
+base_url = "http://127.0.0.1:1025"
+title = "Miles Yeh (iy)"
+description = "chill site"
 compile_sass = false
+minify_html = true
+generate_feeds = false
+default_language = "en"
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
+
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+
+[link_checker]
+internal_level = "warn"
 
 [markdown]
 # Whether to do syntax highlighting
@@ -13,4 +24,12 @@ build_search_index = false
 highlight_code = true
 
 [extra]
-# Put all your custom variables here
+palette = "gruvbox-dark"
+noindex = true
+copyright = "© Miles Yeh, 2024"
+pgp = "4096R / 4D77 A161 08D5 3DB0 84C2 4C88 C747 7876 F7C7 30AE"
+header_nav = [
+  #{ url = "/about", name_en = "/about/"},
+  { url = "/projects", title = "projects"},
+  { url = "/posts", title = "posts"}
+]

@@ -2,7 +2,6 @@
 title = "Miles Yeh (iy)"
 +++
 # Miles Yeh (iy)
-<br/><br/>
 
 Hi! Im, currently an undergrad student at [UC Berkeley](https://eecs.berkeley.edu/cs/) interested in computer graphics, computational design, and high preformance computing. I'm currently a student assistant at [Lawrence Berkeley National Lab](https://www.lbl.gov/) where I work on optimizing HPC infrastructure. 
 

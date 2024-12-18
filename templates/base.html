@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ config.default_language }}">
+
+<head>
+    {% include "partials/head.html" %}
+</head>
+
+<body>
+    <div class="page">
+
+        <header class="page__header">
+            {% include "partials/header.html" %}
+        </header>
+
+        <section class="page__body">
+            {% block main %}
+                {{ section.content | safe }}
+            {% endblock %}
+        </section>
+
+        <footer class="page__footer">
+            {% include "partials/footer.html" %}
+        </footer>
+
+    </div>
+</body>
+
+</html>

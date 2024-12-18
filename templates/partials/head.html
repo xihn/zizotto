@@ -1,0 +1,52 @@
+<title>{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ config.title }}</title>
+{% if config.description %}
+<meta name="description" content="{{ config.description }}">
+{% endif %}
+{% if page.title %}
+{% set title = page.title %}
+{% elif section.title %}
+{% set title = section.title %}
+{% elif config.title %}
+{% set title = config.title %}
+{% endif %}
+{% if page.extra.author %}
+{% set author = page.extra.author %}
+{% elif section.extra.author %}
+{% set author = section.extra.author %}
+{% elif config.extra.author %}
+{% set author = config.extra.author %}
+{% endif %}
+{% if page.description %}
+{% set description = page.description | truncate(length=150) %}
+{% elif section.description %}
+{% set description = section.description | truncate(length=150) %}
+{% elif config.description %}
+{% set description = config.description | truncate(length=150) %}
+{% endif %}
+{% if page.extra.image %}
+{% set image = get_url(path=page.extra.image, trailing_slash=false) %}
+{% elif section.extra.image %}
+{% set image = get_url(path=section.extra.image, trailing_slash=false) %}
+{% elif config.extra.favicon %}
+{% set image = get_url(path=config.extra.favicon, trailing_slash=false) %}
+{% endif %}
+{% if page.permalink %}
+{% set url = page.permalink %}
+{% elif section.permalink %}
+{% set url = section.permalink %}
+{% elif config.base_url %}
+{% set url = config.base_url %}
+{% endif %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+{% if config.extra.noindex %}
+<meta name="robots" content="noindex" />
+{% endif %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+{% set palette = config.extra.palette %}
+<link rel="stylesheet" href="{{ get_url(path="css/palettes/" ~ palette ~ ".css") }}">
+<link rel="stylesheet" href="{{ get_url(path="css/risotto.css") }}">
+<link rel="stylesheet" href="{{ get_url(path="css/custom.css") }}">
