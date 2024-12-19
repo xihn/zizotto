@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://iy.srht.site/"
+base_url = "https://iytest.pages.dev/"
 title = "Miles Yeh (iy)"
 description = "chill site"
 compile_sass = false
