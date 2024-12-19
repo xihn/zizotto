@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "http://127.0.0.1:1025"
+base_url = "https://iy.srht.site"
 title = "Miles Yeh (iy)"
 description = "chill site"
 compile_sass = false
@@ -34,3 +34,12 @@ header_nav = [
   { url = "/posts", title = "posts"}
 ]
 title_space = true
+
+csp = """
+default-src 'self'; 
+script-src 'self' https://cdn.jsdelivr.net 'sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx' 'sha384-zWYbd0NBwgTsgIdFKVprSfTh1mbMPe5Hz1X3yY4Sd1h/K1cQoUe36OGwAGz/PcDy' 'sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe'; 
+style-src 'self' https://cdn.jsdelivr.net 'sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y'; 
+object-src 'none'; 
+base-uri 'self'; 
+connect-src 'self';
+"""

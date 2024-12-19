@@ -43,10 +43,9 @@
 <meta name="robots" content="noindex" />
 {% endif %}
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="{{ get_url(path="css/web/font-awesome.min.css") }}">
+<link rel="stylesheet" href="{{ get_url(path="css/web/academicons.min.css") }}">
 
 {% set palette = config.extra.palette %}
 <link rel="stylesheet" href="{{ get_url(path="css/palettes/" ~ palette ~ ".css") }}">
 <link rel="stylesheet" href="{{ get_url(path="css/risotto.css") }}">
-<link rel="stylesheet" href="{{ get_url(path="css/custom.css") }}">

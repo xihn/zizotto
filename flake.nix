@@ -13,6 +13,7 @@
       devShells.${system}.default = pkgs.mkShell {
         buildInputs = [
           pkgs.zola
+          pkgs.hut
         ];
 
         # Optional: Set environment variables here

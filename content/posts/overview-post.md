@@ -62,18 +62,13 @@ Now a table:
 
 random image of a dog[^4]
 
-## Multilanguage support
-- 🥣 [This site but in french (only this page and the homepage is translated)](/fr)
-
 ## Webrings
-  - 🈯 {{ webring(prev="#", webring="#", webringName="Random Webring", next="#") }}
+
+{{ webring(prev="#", webring="#", webringName="Random Webring", next="#") }}
 
 ---
 
 [^1]: this is a footnote. It should highlight if you click on the corresponding superscript number.
-
 [^2]: hey there
-
 [^3]: this is another footnote.
-
 [^4]: this is a very very long footnote to test if a very very long footnote brings some problems or not. I strongly hope that there are no problems but you know sometimes problems arise from nowhere.

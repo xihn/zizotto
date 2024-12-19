@@ -207,7 +207,7 @@ sub {
     top: 0.25rem; 
 }
 
-/* Tables */
+/* Tables 
 table {
     border-spacing: 0;
     margin: 0 0 1.5rem 0;
@@ -222,7 +222,7 @@ th:first-child, td:first-child {
 }
 th {
     text-align: inherit;
-}
+} */
 
 /* Figures */
 img {
