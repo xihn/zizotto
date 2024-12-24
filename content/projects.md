@@ -4,4 +4,4 @@ date = 2019-02-28
 +++
 🚧 Under Construction 🚧
 
-These are some various shitty projects I have worked on blah blah.
+These are some various projects I have worked on.
