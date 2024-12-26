@@ -35,5 +35,5 @@ Discover additional content:
 
 
 # Verification
-- My public key: [publickey.asc](https://raw.githubusercontent.com/xihn/static/refs/heads/main/static/publickey.asc)
-- Signed verification of this site: [siteownership.txt](https://raw.githubusercontent.com/xihn/static/refs/heads/main/static/siteownership.txt)
+- My public key: [publickey.asc](https://raw.githubusercontent.com/xihn/keys/refs/heads/main/publickey.asc)
+- Signed verification of this site: [siteownership.txt](https://raw.githubusercontent.com/xihn/keys/refs/heads/main/site.asc)

@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://iy.srht.site/"
+base_url = "https://iy.srht.site"
 title = "Miles Yeh (iy)"
 description = "miles site"
 compile_sass = false
@@ -24,10 +24,11 @@ internal_level = "warn"
 highlight_code = true
 
 [extra]
-palette = "base16-light"
+palette = "blackmetal-dark"
 noindex = true
 copyright = "© Miles Yeh, 2024"
 pgp = "4096R / 4D77 A161 08D5 3DB0 84C2 4C88 C747 7876 F7C7 30AE"
+favicon = "favicon.ico"
 header_nav = [
   #{ url = "/about", name_en = "/about/"},
   { url = "/projects", title = "projects"},
