@@ -1,6 +1,6 @@
 +++
-title = "Latex Testing"
-date = 2024-12-18
+title = "Latex Test"
+date = 1970-01-01
 [extra]
     katex_enable = true
 +++
@@ -12,7 +12,7 @@ In this example we will be using [KaTeX](https://katex.org/)
 
 - Create a partial under `/layouts/partials/math.html`
 - Within this partial reference the [Auto-render Extension](https://katex.org/docs/autorender.html) or host these scripts locally.
-- Include the partial in your templates like so:  
+- Include the partial in your templates like so:
 
 ```bash
 {{ if or .Params.math .Site.Params.math }}
@@ -36,5 +36,5 @@ Inline math: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)
 
 Block math:
 $$
- \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
+ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
 $$

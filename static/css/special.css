@@ -5,63 +5,70 @@ table {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
-  }
-  
-  td,
-  th {
+
+    table-layout: auto; /* Columns adapt to their content and the available space */
+    border-collapse: collapse;
+    margin-bottom: 1rem; /* Some space after the table, optional */
+}
+
+td,
+th {
     border: 1px solid var(--off-fg);
     text-align: start;
     padding: 0.5rem;
-  }
-  
-  th {
+
+    word-wrap: break-word; /* Break long words */
+    white-space: normal; /* Allow wrapping instead of forcing single-line text */
+    overflow-wrap: break-word; /* Modern property for breaking text */
+}
+
+th {
     background-color: var(--inner-bg);
     font-weight: bold;
-  }
-  
-  tr:nth-child(even) {
+}
+
+tr:nth-child(even) {
     background-color: var(--inner-bg);
-  }
-  
-  table caption {
+}
+
+table caption {
     text-align: left;
     font-weight: bold;
-    margin: 0 0 .4rem 1rem;
-  }
+    margin: 0 0 0.4rem 1rem;
+}
 
 body > footer {
     color: var(--muted);
-    font-size: .875;
-  }
-
-  .footnote-definition p {
-    display: inline;
-    margin: .625rem 0 0 .625rem;
+    font-size: 0.875;
 }
-  
 
-  /* chromium scrollbars */
+.footnote-definition p {
+    display: inline;
+    margin: 0.625rem 0 0 0.625rem;
+}
+
+/* chromium scrollbars */
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
     overflow: visible;
-  }
-  ::-webkit-scrollbar-thumb {
+}
+::-webkit-scrollbar-thumb {
     background: var(--logo);
     width: 12px;
-  }
-  ::-webkit-scrollbar-track {
+}
+::-webkit-scrollbar-track {
     background: var(--muted);
-  }
-  
-  /* firefox scrollbars */
-  * {
+}
+
+/* firefox scrollbars */
+* {
     scrollbar-color: var(--logo) var(--muted);
     scrollbar-width: thin;
     scrollbar-height: thin;
-  }
+}
 
-  .icons {
+.icons {
     width: 1.3rem;
     height: 1.3rem;
     aspect-ratio: 1 / 1;
@@ -72,7 +79,3 @@ body > footer {
     background-color: transparent;
     cursor: pointer;
 }
-  
-
-
-  

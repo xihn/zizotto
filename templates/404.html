@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="{{ config.default_language }}">
+    <head>
+        {% include "partials/head.html" %}
+    </head>
+
+    <body>
+        <div class="page">
+            <section class="page__body">
+                {% block content %}
+                <div class="content__body">
+                    <h1>404</h1>
+                    <p>Page not found. You may be lost.</p>
+                </div>
+                {% endblock content %}
+            </section>
+        </div>
+    </body>
+</html>

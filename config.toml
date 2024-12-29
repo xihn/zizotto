@@ -30,8 +30,8 @@ copyright = "© Miles Yeh, 2024"
 pgp = "4096R / 4D77 A161 08D5 3DB0 84C2 4C88 C747 7876 F7C7 30AE"
 favicon = "favicon.ico"
 header_nav = [
-  #{ url = "/about", name_en = "/about/"},
-  { url = "/projects", title = "projects"},
-  { url = "/posts", title = "posts"}
+    #{ url = "/about", name_en = "/about/"},
+    { url = "/projects", title = "projects" },
+    { url = "/posts", title = "posts" },
 ]
-title_space = true
+title_space = false

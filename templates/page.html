@@ -1,65 +1,68 @@
-{% extends "base.html" %}
-
-{% block content %}
-
-{% block main %}
+{% extends "base.html" %} {% block content %} {% block main %}
 <header class="content__header">
-  <h1>{{ page.title }}</h1>
+    <h1>{{ page.title }}</h1>
 </header>
 
-{% if config.extra.title_space%}
-<br/>
-{% endif %}
+<p class="post-date">{{ page.date | date(format="%B %d, %Y") }}</p>
 
-{% if page.toc and page.extra.toc %}
+{% if config.extra.title_space%}
+<br />
+{% endif %} {% if page.toc and page.extra.toc %}
 <h2>Table of contents</h2>
 <ul>
-{% for h1 in page.toc %}
-  <li>
-  <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
-  {% if h1.children %}
-    <ul>
-      {% for h2 in h1.children %}
-        <li>
-        <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
-          <ul>
-          {% for h3 in h2.children %}
+    {% for h1 in page.toc %}
+    <li>
+        <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+        {% if h1.children %}
+        <ul>
+            {% for h2 in h1.children %}
             <li>
-            <a href="{{ h3.permalink | safe }}">{{ h3.title }}</a>
+                <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                <ul>
+                    {% for h3 in h2.children %}
+                    <li>
+                        <a href="{{ h3.permalink | safe }}">{{ h3.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </li>
-          {% endfor %}
-          </ul>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-  </li>
-{% endfor %}
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </li>
+    {% endfor %}
 </ul>
-{% endif %}
+{% endif %} {% block js %} {% if page.extra.katex_enable %}
+<script
+    defer
+    src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js"
+    integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx"
+    crossorigin="anonymous"
+></script>
+<script
+    defer
+    src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/mathtex-script-type.min.js"
+    integrity="sha384-zWYbd0NBwgTsgIdFKVprSfTh1mbMPe5Hz1X3yY4Sd1h/K1cQoUe36OGwAGz/PcDy"
+    crossorigin="anonymous"
+></script>
+<script
+    defer
+    src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js"
+    integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe"
+    crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"
+></script>
+{% endif %} {% endblock js %} {% block css %} {% if page.extra.katex_enable %}
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css"
+    integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y"
+    crossorigin="anonymous"
+/>
+{% endif %} {% endblock css %}
 
-{% block js %}
-{% if page.extra.katex_enable %}
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/mathtex-script-type.min.js" integrity="sha384-zWYbd0NBwgTsgIdFKVprSfTh1mbMPe5Hz1X3yY4Sd1h/K1cQoUe36OGwAGz/PcDy" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
-{% endif %}
-{% endblock js %}
-
-{% block css %}
-          {% if page.extra.katex_enable %}
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
-          {% endif %}
-{% endblock css %}
-
-<div class="content__body">
-  {{ page.content | safe }}
-</div>
+<div class="content__body">{{ page.content | safe }}</div>
 
 <footer class="content__footer"></footer>
 
-
-{% endblock %}
-
-{% endblock content %}
+{% endblock %} {% endblock content %}
