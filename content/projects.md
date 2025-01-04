@@ -1,12 +1,11 @@
 +++
 title = "Projects"
-date = 2019-02-28
 +++
-
+<br/>
 In my lazy years I have worked on some random things mostly created out of fustration or to learn. Use anything here with extreme caution given its probably broken and shit. I cant say I am particularly proud of any of these but here they are:
 
 #  *[HTML, CSS]* zizotto 🎨
-A custom fork of a Hugo theme called [risotto](https://risotto.joeroe.io) by Joe Roe which I then adapted for use with [Zola](https://getzola.com) hence the name.
+A custom fork of a Hugo theme called [risotto](https://risotto.joeroe.io) by Joe Roe which I then adapted for use with [Zola](https://getzola.org) hence the name.
 Very much still WIP but source is avaliable [here](https://github.com/xihn/zizotto)
 
 # *[rust]* rblas 🔢

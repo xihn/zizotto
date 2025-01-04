@@ -19,7 +19,7 @@
 {% for child in pages %}
   <article class="post">
     <header class="post__header">
-        <time datetime="{{ child.date }}"><span class="date">{{ child.date | date(format="%d/%m/%y") }}</span></time> » 
+        <time datetime="{{ child.date }}"><span class="date">{{ child.date | date(format="%d/%m/%Y") }}</span></time> »
         <a href="{{ child.permalink }}">{{ child.title }}</a>
     </header>
   </article>
