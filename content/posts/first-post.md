@@ -17,7 +17,3 @@ The theme for this site was made by some guy named Joe Roe named risotto, I then
 In ripping off the theme I also removed the tags because I don't find them useful and probably wont have enough posts to have them matter. I also got rid of the rss shit since I am not balls deep into all of that and got rid of the webring stuff as well.
 
 Unfortunately Im probably not going to have all of the nerdy shit that most simliar sort of sites have. Im sadly not an arch linux, rust, emacs, fediverse, whateverthefuck type of person (shoutout to them tho) and unforunantely just a normal cornball. So this is my normal cornball site.
-
-# Actually building the site
-
-This can serve as a guide from moving templates from hugo to zola. I started from the hugo theme

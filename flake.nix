@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
-  outputs = { self, nixpkgs }: 
+  outputs = { self, nixpkgs }:
     let
       system = "x86_64-linux"; # Adjust for your system, e.g., "aarch64-darwin" for Mac ARM
       pkgs = nixpkgs.legacyPackages.${system};
@@ -14,11 +14,14 @@
         buildInputs = [
           pkgs.zola
           pkgs.hut
+          pkgs.fish
         ];
 
         # Optional: Set environment variables here
         shellHook = ''
-          echo "Welcome to the Zola development environment!"
+          echo "Loaded Zola development environment!"
+          export IN_NIX_SHELL=1
+          exec ${pkgs.fish}/bin/fish
         '';
       };
     };
