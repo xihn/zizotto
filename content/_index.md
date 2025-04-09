@@ -4,8 +4,13 @@ title = "Miles Yeh (iy)"
 # Miles Yeh (iy)
 <br/>
 
-Hi! Im currently an undergrad student at [UC Berkeley](https://eecs.berkeley.edu/cs/) interested in computer graphics, game development, and high preformance computing. I'm also working as a student assistant at [Lawrence Berkeley National Lab](https://www.lbl.gov/) where I help out with optimizing HPC infrastructure.
+Hi! Im currently an undergraduate student at [UC Berkeley](https://eecs.berkeley.edu/cs/) interested in computer graphics, game development, and high preformance computing. I'm also working as a student assistant at [Lawrence Berkeley National Lab](https://www.lbl.gov/) where I help out with optimizing HPC infrastructure.
 
+<!--
+
+Hi! I am currenlty a member of the technical staff at [Lawrence Berkeley National Lab](https://www.lbl.gov/) working on optimizing HPC infrastructure. I hold a B.A from [UC Berkeley](https://eecs.berkeley.edu/cs/) and a M.S from the [University of Chicago](https://computerscience.uchicago.edu/).
+
+--->
 
 Im also a large supporter of privacy protections, anonymity, digital rights, right to repair, open source, anti DRM, etc.
 

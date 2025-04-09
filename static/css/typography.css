@@ -1,21 +1,20 @@
 /* Fonts */
 :root {
-    --font-monospace: "Fira Mono", monospace;
+    --font-monospace: SF Mono,Consolas, Menlo, Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Cascadia,Lucida Sans Typewriter,Courier New,monospace,serif;
 }
 
 body {
-    font-family: Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
-    /* font-family: var(--font-monospace); */
+    font-family: var(--font-monospace);
     font-size: 16px;
     line-height: 1.5rem;
 }
 
 /* Headings */
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
     font-size: 1rem;
     margin: 1.5rem 0 0 0;
@@ -47,11 +46,11 @@ h4:before { content: "#### "; }
 h5:before { content: "##### "; }
 h6:before { content: "###### "; }
 
-h1:before, 
-h2:before, 
-h3:before, 
-h4:before, 
-h5:before, 
+h1:before,
+h2:before,
+h3:before,
+h4:before,
+h5:before,
 h6:before {
     color: var(--muted);
 }
@@ -151,7 +150,7 @@ blockquote::before {
 
 /* Code */
 pre,
-code, 
+code,
 kbd,
 samp {
     background: var(--inner-bg) !important;
@@ -203,11 +202,11 @@ sup, sub {
     top: -0.25rem;
     font-size: unset;
 }
-sub { 
-    top: 0.25rem; 
+sub {
+    top: 0.25rem;
 }
 
-/* Tables 
+/* Tables
 table {
     border-spacing: 0;
     margin: 0 0 1.5rem 0;
