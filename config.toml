@@ -6,7 +6,6 @@ compile_sass = false
 minify_html = true
 generate_feeds = false
 default_language = "en"
-
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
@@ -18,15 +17,17 @@ anchors = "on"
 [link_checker]
 internal_level = "warn"
 
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
+external_links_target_blank = true
 
 [extra]
 palette = "blackmetal-auto"
 noindex = true
-copyright = "© Miles Yeh, 2024"
+copyright = "© Miles Yeh, 2025"
 pgp = "4096R / 4D77 A161 08D5 3DB0 84C2 4C88 C747 7876 F7C7 30AE"
 favicon = "favicon.ico"
 header_nav = [

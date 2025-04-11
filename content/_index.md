@@ -4,7 +4,7 @@ title = "Miles Yeh (iy)"
 # Miles Yeh (iy)
 <br/>
 
-Hi! Im currently an undergraduate student at [UC Berkeley](https://eecs.berkeley.edu/cs/) interested in computer graphics, game development, and high preformance computing. I'm also working as a student assistant at [Lawrence Berkeley National Lab](https://www.lbl.gov/) where I help out with optimizing HPC infrastructure.
+Hi! Im currently an undergraduate student at [UC Berkeley](https://eecs.berkeley.edu/cs/) interested in computer graphics, game development, and high preformance computing. I'm also working as a student assistant at [Lawrence Berkeley National Lab](https://cs.lbl.gov/) where I help out with optimizing HPC infrastructure.
 
 <!--
 
@@ -33,7 +33,7 @@ Discover additional content:
 
 # Online Presence
 - Preferred Email : milesy at berkeley dot edu
-- Backup Email: [iy@berkeley.edu](mailto:iy@berkeley.edu)
+- Work Email: [mhyeh@lbl.gov](mailto:mhyeh@lbl.gov)
 - Secure Email: [iy000@riseup.net](mailto:iy000@riseup.net)
 - Code Repositories: [xihn@github](https://github.com/xihn), [iy000@gitlab](https://gitlab.com/iy000), [iy@sr.ht](https://git.sr.ht/~iy)
 
