@@ -36,33 +36,15 @@
     </li>
     {% endfor %}
 </ul>
-{% endif %} {% block js %} {% if page.extra.katex_enable %}
-<script
-    defer
-    src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"
-    integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6"
-    crossorigin="anonymous">
-</script>
-<script
-    defer
-    src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/mathtex-script-type.min.js"
-    integrity="sha384-zWYbd0NBwgTsgIdFKVprSfTh1mbMPe5Hz1X3yY4Sd1h/K1cQoUe36OGwAGz/PcDy"
-    crossorigin="anonymous"
-></script>
-<script
-    defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"
-    integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh"
-    crossorigin="anonymous"
-        onload="renderMathInElement(document.body);">
-</script>
-{% endif %} {% endblock js %} {% block css %} {% if page.extra.katex_enable %}
-<link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css"
-    integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP"
-    crossorigin="anonymous"
->
-{% endif %} {% endblock css %}
+{% endif %}
+
+{% block js %} {% if page.extra.katex_enable %}
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0-beta.7/tex-mml-chtml.min.js"></script>
+<!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js" integrity="sha512-6FaAxxHuKuzaGHWnV00ftWqP3luSBRSopnNAA2RvQH1fOfnF/A1wOfiUWF7cLIOFcfb1dEhXwo5VG3DAisocRw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+-->
+{% endif %} {% endblock js %}
 
 <div class="content__body">{{ page.content | safe }}</div>
 
